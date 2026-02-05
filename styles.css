@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0; padding: 0;
+    background-color: #050505;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace; /* Police plus technique */
+    color: #ffffff;
+    width: 380px;
+    min-height: 200px;
+}
+
+.main-border {
+    border: 1px solid #333;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: #0a0a0a;
+}
+
+header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.stk-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5c00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* --- STATUTS --- */
+.status-message {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #333;
+}
+
+/* --- COOKIES CARDS --- */
+.cookie-card {
+    background-color: #111;
+    border-left: 4px solid #555; /* Couleur par défaut */
+    border-radius: 0 4px 4px 0;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* NIVEAU 1: CRITIQUE (Rouge) */
+.level-critical {
+    border-left-color: #ef4444;
+    background: linear-gradient(90deg, rgba(239, 68, 68, 0.1) 0%, rgba(0,0,0,0) 100%);
+}
+.level-critical .badge { color: #ef4444; border-color: #ef4444; }
+.level-critical .domain-name { color: #ef4444; }
+
+/* NIVEAU 2: SUSPECT (Orange) */
+.level-suspect {
+    border-left-color: #f97316;
+}
+.level-suspect .badge { color: #f97316; border-color: #f97316; }
+.level-suspect .domain-name { color: #f97316; }
+
+/* NIVEAU 3: TRACKING (Jaune) */
+.level-tracking {
+    border-left-color: #eab308;
+    opacity: 0.8; /* Un peu plus discret */
+}
+.level-tracking .badge { color: #eab308; border-color: #eab308; }
+.level-tracking .domain-name { color: #eab308; }
+
+/* CONTENU CARTE */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.domain-name {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.badge {
+    font-size: 9px;
+    text-transform: uppercase;
+    border: 1px solid #555;
+    padding: 2px 4px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+
+.cookie-detail {
+    font-size: 11px;
+    color: #aaa;
+    word-break: break-all;
+    margin-top: 4px;
+}
+
+.hidden { display: none; }

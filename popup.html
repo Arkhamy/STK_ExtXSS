@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>STK Audit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-border">
+        <header>
+            <h1 class="stk-title">STK <span style="color:white">XSS SCANNER</span></h1>
+            <div id="count-display" style="font-size:11px; color:#888; margin-top:5px;">Scan en cours...</div>
+        </header>
+
+        <div id="content-area">
+            <div id="loading" class="status-message">INITIALISATION...</div>
+            
+            <div id="cookies-list" class="hidden"></div>
+            
+            <div id="empty-state" class="hidden status-message" style="border-color: #22c55e; color: #22c55e;">
+                ✅ SYSTÈME SÉCURISÉ<br>
+                <span style="font-size:10px; opacity:0.8">Tous les cookies sont HttpOnly ou absents.</span>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
