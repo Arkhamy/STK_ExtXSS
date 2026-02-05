@@ -41,7 +41,15 @@ STK_ExtXSS/
 └── logoxss.png     # Icône de l'extension
 
 
-## 🚀 Installation (Développement)
+## 🚀 Installation
+
+### Depuis le Store (Utilisateurs)
+
+Installez la version stable et vérifiée directement depuis le store Mozilla :
+
+🔗 https://addons.mozilla.org/fr/firefox/addon/stk-cookie-audit-xss
+
+### Depuis le Code Source (Développeurs)
 
 Clonez ce dépôt ou téléchargez les fichiers.
 
