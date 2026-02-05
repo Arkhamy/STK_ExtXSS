@@ -29,10 +29,15 @@ Interface STK : Mode sombre contrasté pour une lisibilité optimale lors des au
 ## 📂 Structure du Projet
 
 STK_ExtXSS/
+
 ├── manifest.json   # Configuration de l'extension (Manifest V3)
+
 ├── popup.html      # Interface utilisateur (Structure)
+
 ├── styles.css      # Design System (Thème Sombre/Orange)
+
 ├── popup.js        # Logique d'analyse et de classification
+
 └── logoxss.png     # Icône de l'extension
 
 
